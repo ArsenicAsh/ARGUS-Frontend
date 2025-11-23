@@ -1,16 +1,31 @@
-# React + Vite
+# 🚨 ARGUS Frontend  
+**AI-Powered Monitoring Dashboard for Crowd Analysis**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ARGUS is an intelligent, real-time monitoring dashboard designed for large-scale events such as **Kumbh Mela**, providing security teams with a clean and intuitive interface for tracking live CCTV feeds, camera status, crowd density levels, and alert conditions.
 
-Currently, two official plugins are available:
+This repository contains the **frontend UI**, built using **React + Vite + TailwindCSS**, designed for speed, scalability, and smooth visual effects.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Key Features (Frontend)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🎥 **Live Camera Grid (Window 1)**
+- Displays multiple CCTV feeds  
+- Modern card design with hover depth animation  
+- Status-based glow (Safe / Medium / Critical)  
+- Live-pulse indicator showing stream health  
+- Double-click to open camera in fullscreen modal  
+- Clean collapsible sidebar with dynamic camera details  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧠 **Dynamic Indicators**
+Each camera card supports:
+- **Status Badge** → SAFE / MEDIUM / HIGH  
+- **Live Pulse Dot** → Green (Live), Yellow (Slightly delayed), Red (Lagging)  
+- **Glow Ring** based on crowd density alert  
+- **Selected State Highlight**  
+- **Smooth hover scaling & shadows**
+
+All of these will later be driven dynamically from backend API data.
+

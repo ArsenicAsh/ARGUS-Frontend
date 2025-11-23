@@ -1,4 +1,6 @@
+# ---------------------------------------
 # Logs
+# ---------------------------------------
 logs
 *.log
 npm-debug.log*
@@ -7,18 +9,64 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# ---------------------------------------
+# Dependency directories
+# ---------------------------------------
+node_modules/
+
+# ---------------------------------------
+# Build output
+# ---------------------------------------
+dist/
+dist-ssr/
 *.local
 
+# ---------------------------------------
+# Environment Variables (IMPORTANT)
+# Never commit API keys
+# ---------------------------------------
+.env
+.env.*
+!.env.example
+
+# ---------------------------------------
 # Editor directories and files
+# ---------------------------------------
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
+
+# Visual Studio files
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# ---------------------------------------
+# Temporary / backup files
+# ---------------------------------------
+*.tmp
+*.temp
+*.bak
+*.old
+*~
+.#*
+
+# ---------------------------------------
+# OS specific junk
+# ---------------------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ---------------------------------------
+# Vite cache
+# ---------------------------------------
+.vite/
+
+# ---------------------------------------
+# Test coverage
+# ---------------------------------------
+coverage/

@@ -24,8 +24,8 @@ export function DeploymentsProvider({ children }) {
   ]);
 
   function advanceDeployment(id) {
-    setDeployments(prev =>
-      prev.map(dep =>
+    setDeployments((prev) =>
+      prev.map((dep) =>
         dep.id === id
           ? { ...dep, status: getNextState(dep.status) }
           : dep
@@ -34,7 +34,7 @@ export function DeploymentsProvider({ children }) {
   }
 
   function createDeploymentFromSuggestion(suggestion) {
-    setDeployments(prev => [
+    setDeployments((prev) => [
       {
         id: `D-${Date.now()}`,
         title: suggestion.title,
@@ -47,12 +47,29 @@ export function DeploymentsProvider({ children }) {
     ]);
   }
 
+  // NEW: Create deployment directly from alert
+  function createDeploymentFromAlert(alert, username) {
+    setDeployments((prev) => [
+      {
+        id: `D-${Date.now()}`,
+        title: `Respond to ${alert.source}`,
+        status: "COMMAND_SENT",
+        assigned: "Pending Assignment",
+        approvedBy: username,
+        time: new Date().toLocaleTimeString(),
+        linkedAlertId: alert.id,
+        severity: alert.severity,
+      },
+      ...prev,
+    ]);
+  }
+
   const activeDeployments = deployments.filter(
-    d => d.status !== "RESOLVED"
+    (d) => d.status !== "RESOLVED"
   );
 
   const resolvedDeployments = deployments.filter(
-    d => d.status === "RESOLVED"
+    (d) => d.status === "RESOLVED"
   );
 
   return (
@@ -62,6 +79,7 @@ export function DeploymentsProvider({ children }) {
         resolvedDeployments,
         advanceDeployment,
         createDeploymentFromSuggestion,
+        createDeploymentFromAlert,
       }}
     >
       {children}
@@ -71,10 +89,12 @@ export function DeploymentsProvider({ children }) {
 
 export function useDeploymentsContext() {
   const ctx = useContext(DeploymentsContext);
+
   if (!ctx) {
     throw new Error(
       "useDeploymentsContext must be used inside DeploymentsProvider"
     );
   }
+
   return ctx;
 }

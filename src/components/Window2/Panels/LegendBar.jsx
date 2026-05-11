@@ -1,6 +1,6 @@
 export default function LegendBar() {
   return (
-    <div className="absolute bottom-4 left-4 z-[1000] w-64 bg-white/90 backdrop-blur-md rounded-xl shadow-lg px-4 py-3 text-sm">
+    <div className="absolute bottom-4 left-4 z-[1000] w-64 bg-neutral-900 border border-neutral-700 rounded-xl shadow-2xl px-4 py-3 text-sm text-neutral-200">
       
       {/* ===== Crowd Status ===== */}
       <Section title="Crowd Status">
@@ -35,7 +35,7 @@ export default function LegendBar() {
 function Section({ title, children }) {
   return (
     <div className="mb-2">
-      <div className="text-xs font-semibold text-gray-700 mb-1">
+      <div className="text-xs font-semibold text-neutral-300 mb-1">
         {title}
       </div>
       <div className="space-y-1">{children}</div>

@@ -1,239 +1,297 @@
 # 🚨 ARGUS Frontend
 
-### AI-Powered Crowd Intelligence & Operational Response System
+> ### AI-Powered Crowd Intelligence & Operational Response System
 
-ARGUS is a real-time **AI-assisted crowd intelligence and emergency response platform** designed for large-scale public gatherings such as **Kumbh Mela, concerts, rallies, festivals, and high-density public events**.
+ARGUS (**AI-Powered Response & Guidance Unified System**) is a modern **AI-assisted command-and-control platform** designed to help authorities monitor, analyze, and respond to crowd situations during large public gatherings such as **Kumbh Mela, festivals, concerts, rallies, religious events, and emergency situations**.
 
-Built as a modern **command & control interface**, ARGUS enables operators, analysts, and authorities to:
+Built using **React + Vite + TailwindCSS**, ARGUS combines **real-time surveillance, crowd intelligence, AI-assisted decision support, and operational response management** into a unified command-center dashboard.
 
-* Monitor crowd activity in real time
-* Detect abnormal density patterns
-* Escalate operational incidents
-* Coordinate deployments and responses
-* Track incident resolution lifecycles
+---
 
-This repository contains the **frontend application**, built with **React + Vite + TailwindCSS**, with a modular architecture designed for scalability, operational clarity, and future backend integration.
+# ✨ Key Features
+
+- 📡 Live Surveillance Monitoring
+- 🗺️ Interactive Crowd Intelligence Dashboard
+- 🧠 AI-Assisted Decision Intelligence
+- 🚑 Operational Resource Management
+- 📈 Live Crowd Trend Visualization
+- 🚨 Incident Detection & Escalation Workflow
+- 📋 Deployment Lifecycle Management
+- 🔐 Role-Based Authentication & Access Control
+- 📊 Operational Activity Timeline
+- 🌙 Modern Emergency Operations Center (EOC) Interface
 
 ---
 
 # 🧭 Project Vision
 
-ARGUS is designed as a:
-
-> **Real-Time Operational Intelligence Platform**
+ARGUS is designed as a **Real-Time Crowd Intelligence Platform** capable of supporting authorities before, during, and after crowd-related incidents.
 
 Rather than functioning as a passive monitoring dashboard, ARGUS aims to provide:
 
-* Situational awareness
-* Human-in-the-loop AI recommendations
-* Incident escalation management
-* Deployment coordination
-* Operational traceability
+- Situational Awareness
+- AI-Assisted Decision Support
+- Human-in-the-Loop Approvals
+- Operational Deployment Coordination
+- Resource Tracking
+- Incident Traceability
 
-The long-term goal is to create a deployable command-center system capable of supporting real-world crowd management operations.
-
----
-
-# 🧱 Tech Stack
-
-* **React (Vite)** — Fast modern frontend framework
-* **TailwindCSS** — Utility-first styling system
-* **React Router DOM** — Protected routing & role-based navigation
-* **Context API** — Shared operational state management
-* **Recharts** — Real-time analytics & trend visualization
-* **Modular Component Architecture** — Scalable window-based structure
+The long-term objective is to evolve ARGUS into a deployable command-center platform for real-world crowd management operations.
 
 ---
 
-# 🔐 Authentication & Access Control
+# 🛠️ Technology Stack
 
-ARGUS includes a frontend role-based access system with:
-
-* Secure login flow
-* Protected routes
-* Role-based module visibility
-* Operational access separation
-
-### Supported Roles
-
-| Role      | Access                 |
-| --------- | ---------------------- |
-| Operator  | Surveillance           |
-| Analyst   | Analytics              |
-| Authority | Full Operations Access |
-| Admin     | Full System Access     |
+| Technology | Purpose |
+|------------|---------|
+| React (Vite) | Frontend Framework |
+| TailwindCSS | Utility-first Styling |
+| React Router DOM | Routing & Navigation |
+| Context API | State Management |
+| React Leaflet | Interactive Maps |
+| OpenStreetMap | GIS Map Tiles |
+| Recharts | Live Charts & Analytics |
 
 ---
 
-# 🪟 System Modules
+# 🔐 Authentication & Role-Based Access
+
+ARGUS implements frontend role-based authentication and protected routing.
+
+## Supported Roles
+
+| Role | Accessible Modules |
+|------|--------------------|
+| Operator | Live Monitoring |
+| Analyst | Crowd Intelligence |
+| Authority | All Operational Modules |
+| Admin | Full System Access |
 
 ---
 
-## 🪟 Home / Control Hub
+# 🏠 Home Dashboard
 
-**Purpose:** Central operational overview
+The Home Dashboard provides an operational overview of the entire ARGUS platform.
 
 ### Features
 
-* Global system overview
-* Active alert summary
-* Quick-access navigation
-* Operational system health
-* Real-time alert testing
-* Integrated command-center UI
+- Welcome Dashboard
+- Live Operational Statistics
+- Dashboard Quick Access Cards
+- Operational Resource Summary
+- System Health Overview
+- Alert Testing Utility
 
 **Status:** ✅ Implemented
 
 ---
 
-## 🪟 Window 1 – Live Surveillance Monitoring
+# 🎥 Window 1 — Live Monitoring
 
-**Purpose:** Real-time camera monitoring & surveillance operations
+Provides real-time CCTV surveillance for crowd monitoring operations.
 
 ### Features
 
-* Live CCTV grid interface
-* Status-based visual indicators
-* Camera activity pulse system
-* Fullscreen surveillance modal
-* Camera metadata display
-* Operational dark-theme UI
+- Live Camera Grid
+- Fullscreen Camera View
+- Camera Metadata
+- Camera Activity Indicators
+- Operational Dark Theme
+- Role-Based Access
 
 **Status:** ✅ Implemented
 
 ---
 
-## 🪟 Window 2 – Crowd Analytics & Heatmap Visualization
+# 🗺️ Window 2 — Crowd Intelligence
 
-**Purpose:** Crowd intelligence and analytical monitoring
+Interactive GIS-based operational intelligence dashboard.
 
 ### Features
 
-* Density heatmap visualization
-* Zone-based analysis
-* Resource legends
-* Trend monitoring
-* Operational map overlays
+- Interactive Crowd Map
+- Density Heatmap Visualization
+- Crowd Density Zones
+- Resource Markers
+- Live Crowd Trend Graph
+- Incident Intelligence Panel
+- Camera Selection & Toggle
+- Critical Camera Blink Indicator
+- Operational Legend
+- Real-Time Status Display
 
-**Status:** 🟡 UI implemented, backend integration pending
+**Status:** 🟡 Frontend Complete (Backend Integration Pending)
 
 ---
 
-## 🪟 Window 3 – Decision Intelligence & Operations
+# 🧠 Window 3 — Decision Intelligence
 
-**Purpose:** Incident escalation and response coordination
+The Decision Intelligence module serves as the operational command center, enabling authorities to evaluate incidents, coordinate resources, approve AI recommendations, and monitor ongoing deployments.
 
-### Core Operational Components
+### 🚨 Alerts & Escalations
 
-#### 🚨 Alerts & Escalations
+- Active Incident Queue
+- Severity-Based Alerting
+- Global Alert Notifications
+- Escalation Management
 
-* Real-time incident queue
-* Severity-based alerting
-* Acknowledgement system
-* Global popup notifications
+### 📈 Trends & Analytics
 
-#### 🧠 AI Suggestions
+- Live Crowd Trend Visualization
+- Historical Trend Monitoring
+- Dynamic Analytics Dashboard
 
-* Operational recommendations
-* Human approval workflow
-* Decision-support architecture
+### 📋 Operational Activity
 
-#### 🚓 Active Actions & Deployments
+- Live Operational Timeline
+- Incident History
+- Deployment Activity Feed
+- Response Tracking
 
-* Incident response tracking
-* Deployment lifecycle management
-* State-machine progression
+### 🤖 AI Decision Intelligence
 
-#### 📜 Deployment Log
+- AI Situation Assessment
+- Operational Recommendations
+- Decision Explanation
+- Suggested Response Strategy
 
-* Resolved deployment archive
-* Operational traceability
-* Historical response records
+### 🚑 Operational Resources
 
-**Status:** ✅ Core operational workflow implemented
+- Resource Availability Overview
+- Ambulances, Police Units, Medical Teams & Volunteers
+- Live Operational Status
+- Available vs Deployed Summary
+
+### 🚓 Deployment Management
+
+- AI Recommendation Approval
+- Active Deployments
+- Deployment Lifecycle Progression
+- Deployment Log Archive
+
+**Status:** ✅ Operational Workflow Implemented
 
 ---
 
 # 🔄 Operational Workflow
 
-ARGUS currently supports a complete operational incident pipeline:
+ARGUS currently supports a complete operational response pipeline.
 
 ```text
-Incident Detected
-        ↓
-Alert Generated
-        ↓
-Popup Notification
-        ↓
-Operations Queue
-        ↓
-Authority Responds
-        ↓
-Deployment Created
-        ↓
-Deployment Lifecycle Progression
-        ↓
-Resolution & Archival
+Live Monitoring
+       │
+       ▼
+Crowd Intelligence
+       │
+       ▼
+Incident Detection
+       │
+       ▼
+Alert Generation
+       │
+       ▼
+Authority Notification
+       │
+       ▼
+AI Decision Support
+       │
+       ▼
+Deployment Approval
+       │
+       ▼
+Resource Dispatch
+       │
+       ▼
+Operational Activity
+       │
+       ▼
+Deployment Resolution
+       │
+       ▼
+Deployment Archive
 ```
 
 ---
 
 # 🚓 Deployment Lifecycle
 
-Deployments progress through structured operational states:
+Every deployment follows a structured operational lifecycle.
 
 ```text
-COMMAND_SENT
-      ↓
-EN_ROUTE
-      ↓
-ON_SITE
-      ↓
+COMMAND SENT
+      │
+      ▼
+EN ROUTE
+      │
+      ▼
+ON SITE
+      │
+      ▼
 RESOLVED
 ```
 
-Resolved deployments automatically move into the deployment archive log.
+Completed deployments are automatically archived inside the Deployment Log for operational traceability.
 
 ---
 
 # 🎨 UI / UX Highlights
 
-* Dark operational command-center design
-* ARGUS branded system identity
-* Boot / initialization sequence
-* Responsive modular layouts
-* Real-time notification system
-* Minimal-distraction interface philosophy
+ARGUS follows a modern Emergency Operations Center (EOC) design philosophy.
+
+### Interface Highlights
+
+- 🌙 Dark Command-Center Theme
+- 📊 Dashboard-Oriented Layout
+- 🗺️ Interactive GIS Mapping
+- 📈 Live Analytics
+- 🚨 Real-Time Alert Notifications
+- 🧠 AI Decision Support Panels
+- 🚑 Operational Resource Dashboard
+- 📋 Modular Component Architecture
+- ⚡ Responsive Design
+- 🎯 Minimal-Distraction Interface
 
 ---
 
-# 📁 Project Structure (Simplified)
+# 📁 Project Structure
 
 ```text
 src/
 ├── assets/
+│
 ├── components/
 │   ├── Window1/
+│   │
 │   ├── Window2/
+│   │   ├── Graph/
+│   │   ├── Map/
+│   │   └── Panels/
+│   │
 │   ├── Window3/
+│   │   ├── AI/
 │   │   ├── Alerts/
 │   │   ├── Deployments/
 │   │   ├── Header/
 │   │   ├── Metrics/
+│   │   ├── Resources/
 │   │   ├── Status/
 │   │   ├── Suggestions/
+│   │   ├── Timeline/
 │   │   ├── Trends/
-│   │   ├── context/
-│   │   └── hooks/
+│   │   └── context/
+│   │
+│   ├── SplashScreen.jsx
+│   └── GlobalAlertPopup.jsx
 │
 ├── context/
-│   ├── AuthContext.jsx
-│   └── AlertContext.jsx
+│   ├── AlertContext.jsx
+│   └── AuthContext.jsx
 │
 ├── layout/
+│   ├── Header.jsx
 │   ├── Layout.jsx
-│   ├── Sidebar.jsx
-│   └── ProtectedRoute.jsx
+│   ├── ProtectedRoute.jsx
+│   └── Sidebar.jsx
 │
 ├── pages/
 │   ├── Home.jsx
@@ -242,65 +300,147 @@ src/
 │   ├── Window2.jsx
 │   └── Window3.jsx
 │
-├── services/       # Future backend/API connectors
-├── hooks/          # Shared/global hooks
-├── api/            # API placeholders
+├── hooks/
+├── services/
+├── api/
+└── App.jsx
 ```
 
 ---
 
-# 🧠 Current Status
+# 🚀 Current Status
 
-### ✅ Implemented
+## ✅ Implemented
 
-* Operational UI architecture
-* Authentication & role-based access
-* Protected routing
-* Incident alert system
-* Real-time popup notifications
-* Deployment workflow management
-* Deployment lifecycle state machine
-* Operational command-center design
-* Splash / boot sequence
-* ARGUS branding integration
+- Role-Based Authentication
+- Protected Routing
+- Command-Center Dashboard
+- Live Surveillance Interface
+- Interactive Crowd Intelligence Dashboard
+- AI Decision Intelligence Module
+- Incident Intelligence Panel
+- Operational Activity Timeline
+- Operational Resource Management
+- Deployment Workflow
+- Deployment Lifecycle State Machine
+- Deployment Log Archive
+- Global Alert Notification System
+- Splash Screen & Boot Sequence
+- ARGUS Branding
+- Responsive Dashboard Layout
 
-### 🟡 Planned / Future Work
+---
 
-* Backend API integration
-* Real-time websocket updates
-* AI-powered anomaly detection
-* Camera health monitoring
-* Incident history archive
-* Live operational metrics
-* Auto-generated analytics alerts
-* Multi-user synchronization
+## 🟡 Planned / Future Enhancements
+
+- Backend API Integration
+- Live WebSocket Updates
+- AI Crowd Density Estimation
+- Predictive Crowd Forecasting
+- Camera Health Monitoring
+- Live CCTV Streaming
+- Historical Incident Analytics
+- Automated Report Generation
+- Multi-User Synchronization
+- Push Notifications
+- Mobile Dashboard Support
+
+---
+
+# 📸 Screenshots
+
+> Screenshots will be added after backend integration.
+
+| Module | Preview |
+|--------|---------|
+| 🏠 Home Dashboard | Coming Soon |
+| 🎥 Live Monitoring | Coming Soon |
+| 🗺️ Crowd Intelligence | Coming Soon |
+| 🧠 Decision Intelligence | Coming Soon |
 
 ---
 
 # ⚠️ Disclaimer
 
-ARGUS is currently a frontend-focused prototype and operational workflow simulation platform.
+ARGUS currently represents the **frontend implementation** of a larger AI-powered crowd intelligence platform.
 
-AI recommendations, analytics, and operational data are currently mocked and will later be powered by backend services and machine learning systems.
+The current version uses **mock operational data** for demonstration purposes.
+
+Future releases will integrate:
+
+- Backend APIs
+- AI crowd-density estimation
+- Real-time camera feeds
+- WebSocket communication
+- Live deployment management
+- Predictive analytics
 
 ---
 
-# 👨‍💻 Development
+# 💻 Getting Started
+
+Clone the repository
+
+```bash
+git clone https://github.com/ArsenicAsh/ARGUS-Frontend.git
+```
+
+Install dependencies
 
 ```bash
 npm install
+```
+
+Run the development server
+
+```bash
 npm run dev
 ```
 
 ---
 
-# 📌 Project Goal
+# 📈 Project Roadmap
 
-The objective of ARGUS is to explore how:
+- ✅ Modern Command-Center UI
+- ✅ Crowd Intelligence Dashboard
+- ✅ AI Decision Dashboard
+- ✅ Incident Workflow Simulation
+- ✅ Operational Resource Management
+- 🟡 Backend Integration
+- 🟡 AI Model Integration
+- 🟡 Live Camera Streams
+- 🟡 Predictive Analytics
+- 🟡 Production Deployment
 
-* AI-assisted surveillance
-* operational intelligence
-* human-in-the-loop decision systems
-* and real-time response coordination
+---
 
-can be unified into a deployable command-center platform for high-density public environments.
+# 🎯 Project Goal
+
+ARGUS explores how **Artificial Intelligence**, **Computer Vision**, **Crowd Analytics**, and **Operational Intelligence** can be unified into a deployable Emergency Operations Center (EOC) platform.
+
+The project focuses on enabling authorities to make **faster, data-driven decisions** during large-scale public gatherings through real-time monitoring, AI-assisted recommendations, and coordinated operational response.
+
+---
+
+# 🤝 Contributors
+
+Developed by the **ARGUS Development Team**
+
+Bachelor of Engineering  
+**Artificial Intelligence & Data Science**
+
+Ajeenkya D. Y. Patil School of Engineering
+
+---
+
+## ⭐ Support
+
+If you found this project interesting, consider giving the repository a ⭐ on GitHub.
+
+It helps support the project and motivates future development.
+
+---
+
+> **ARGUS — AI-Powered Response & Guidance Unified System**
+>
+> *"Transforming crowd intelligence into actionable operational decisions."*

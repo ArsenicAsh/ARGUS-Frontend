@@ -443,4 +443,31 @@ It helps support the project and motivates future development.
 
 > **ARGUS — AI-Powered Response & Guidance Unified System**
 >
+> *"Transforming crowd intelligence into actionable operational decisions."*Operations Center (EOC) platform.
+
+The project focuses on enabling authorities to make **faster, data-driven decisions** during large-scale public gatherings through real-time monitoring, AI-assisted recommendations, and coordinated operational response.
+
+---
+
+# 🤝 Contributors
+
+Developed by the **ARGUS Development Team**
+
+Bachelor of Engineering  
+**Artificial Intelligence & Data Science**
+
+Ajeenkya D. Y. Patil School of Engineering
+
+---
+
+## ⭐ Support
+
+If you found this project interesting, consider giving the repository a ⭐ on GitHub.
+
+It helps support the project and motivates future development.
+
+---
+
+> **ARGUS — AI-Powered Response & Guidance Unified System**
+>
 > *"Transforming crowd intelligence into actionable operational decisions."*

@@ -1,11 +1,16 @@
 import Window3Header from "./Header/Window3Header";
 import SystemStatus from "./Status/SystemStatus";
+import ResourceAvailability from "./Resources/ResourceAvailability";
 import KeyMetricsPanel from "./Metrics/KeyMetricsPanel";
 import AlertsPanel from "./Alerts/AlertsPanel";
 import AISuggestionsPanel from "./Suggestions/AISuggestionsPanel";
 import DeploymentPanel from "./Deployments/DeploymentPanel";
 import DeploymentLog from "./Deployments/DeploymentLog";
 import TrendsPanel from "./Trends/TrendsPanel";
+
+import OperationalActivity from "./Timeline/OperationalActivity";
+import AIDecisionIntelligence from "./AI/AIDecisionIntelligence";
+
 import {
   DeploymentsProvider,
   useDeploymentsContext,
@@ -24,15 +29,42 @@ function Window3Content() {
 
       {/* Main Content */}
       <div className="p-4 grid grid-cols-12 gap-4 min-h-[calc(100vh-56px)]">
-        {/* Left Panel — Trends & History */}
-        <div className="col-span-8 flec flex-col">
-          <TrendsPanel />
+
+        {/* LEFT PANEL */}
+        <div className="col-span-8 flex flex-col gap-4">
+
+          {/* Graph */}
+          <div className="h-[58%]">
+            <TrendsPanel />
+          </div>
+
+          {/* Bottom Intelligence Row */}
+          <div className="grid grid-cols-5 gap-4 flex-1">
+
+            {/* 60% */}
+            <div className="col-span-3">
+              <OperationalActivity />
+            </div>
+
+            {/* 40% */}
+            <div className="col-span-2">
+              <AIDecisionIntelligence />
+            </div>
+
+          </div>
+
         </div>
 
-        {/* Right Panel — Decision & Control */}
+        {/* RIGHT PANEL */}
         <div className="col-span-4 space-y-4">
+
           <SystemStatus />
+
+          {/* NEW */}
+          <ResourceAvailability />
+
           <KeyMetricsPanel />
+
           <AlertsPanel />
 
           <AISuggestionsPanel
@@ -41,8 +73,12 @@ function Window3Content() {
 
           <DeploymentPanel />
 
-          <DeploymentLog items={resolvedDeployments} />
+          <DeploymentLog
+            items={resolvedDeployments}
+          />
+
         </div>
+
       </div>
     </>
   );

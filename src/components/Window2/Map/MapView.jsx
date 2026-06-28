@@ -15,7 +15,7 @@ const DEFAULT_ZOOM = 14;
 
 export default function MapView({ onCameraSelect }) {
   return (
-    <div className="relative h-screen w-screen">
+    <div className="relative h-full w-full overflow-hidden">
       <MapContainer
         center={DEFAULT_CENTER}
         zoom={DEFAULT_ZOOM}
@@ -24,7 +24,7 @@ export default function MapView({ onCameraSelect }) {
         scrollWheelZoom
       >
         <TileLayer
-          attribution='&copy; OpenStreetMap contributors'
+          attribution="&copy; OpenStreetMap contributors"
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
 
@@ -33,7 +33,6 @@ export default function MapView({ onCameraSelect }) {
         <ResourceLinkLayer />
         <ResourceMarkers />
 
-        {/* ✅ PASS THE PROP */}
         <CameraNodes onCameraSelect={onCameraSelect} />
       </MapContainer>
 

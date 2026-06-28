@@ -52,7 +52,7 @@ export default function Sidebar() {
               `${linkStyle} ${isActive ? activeStyle : ""}`
             }
           >
-            Surveillance
+            Live Monitoring
           </NavLink>
         )}
 
@@ -63,7 +63,7 @@ export default function Sidebar() {
               `${linkStyle} ${isActive ? activeStyle : ""}`
             }
           >
-            Analytics
+            Crowd Intelligence
           </NavLink>
         )}
 
@@ -74,7 +74,7 @@ export default function Sidebar() {
               `${linkStyle} ${isActive ? activeStyle : ""}`
             }
           >
-            Operations
+            Decision Intelligence
           </NavLink>
         )}
       </nav>

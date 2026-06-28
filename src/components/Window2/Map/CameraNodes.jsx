@@ -48,47 +48,31 @@ export default function CameraNodes({ onCameraSelect }) {
         const color = STATUS_COLORS[cam.status];
 
         return (
-          <div key={cam.id}>
-            {/* 🔴 OUTER PULSING RING (CRITICAL ONLY) */}
-            {isCritical && (
-              <CircleMarker
-                center={[cam.lat, cam.lng]}
-                radius={20}
-                pathOptions={{
-                  color,
-                  fillColor: color,
-                  fillOpacity: 0.2,
-                  weight: 2,
-                  className: "leaflet-pulse-ring",
-                }}
-              />
-            )}
-
-            {/* 🔴 INNER CAMERA DOT */}
-            <CircleMarker
-              center={[cam.lat, cam.lng]}
-              radius={8}
-              pathOptions={{
-                color,
-                fillColor: color,
-                fillOpacity: 0.95,
-                weight: 1,
-              }}
-              eventHandlers={{
-                click: () => {
-                  onCameraSelect?.(cam);
-                },
-              }}
-            >
-              <Popup>
-                <div className="text-sm">
-                  <div className="font-semibold">{cam.name}</div>
-                  <div>ID: {cam.id}</div>
-                  <div>Status: {cam.status}</div>
-                </div>
-              </Popup>
-            </CircleMarker>
-          </div>
+          <CircleMarker
+            key={cam.id}
+            center={[cam.lat, cam.lng]}
+            radius={8}
+            pathOptions={{
+              color,
+              fillColor: color,
+              fillOpacity: 0.95,
+              weight: 1,
+              className: isCritical ? "leaflet-camera-blink" : "",
+            }}
+            eventHandlers={{
+              click: () => {
+                onCameraSelect?.(cam);
+              },
+            }}
+          >
+            <Popup>
+              <div className="text-sm">
+                <div className="font-semibold">{cam.name}</div>
+                <div>ID: {cam.id}</div>
+                <div>Status: {cam.status}</div>
+              </div>
+            </Popup>
+          </CircleMarker>
         );
       })}
     </>
